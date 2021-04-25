@@ -148,6 +148,7 @@
   padding: 58px 65px 58px 51px;
   margin-left: -140px;
   margin-top: 36px;
+  margin-bottom: 100px;
   z-index: 1;
 
   @include viewport--md {
@@ -156,6 +157,7 @@
     padding: 24px 27px 26px 20px;
     margin-left: auto;
     margin-top: -30px;
+    margin-bottom: 0;
   }
 }
 

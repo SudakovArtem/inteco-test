@@ -6,10 +6,10 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 168px;
+  min-height: 120px;
 
   @include viewport--md {
-    min-height: 83px;
+    min-height: 78px;
   }
 
   &::before {
@@ -17,9 +17,9 @@
     position: absolute;
     background-color: $color-very-light-grey;
     left: 23.83%;
-    top: 48px;
+    top: 0;
     width: 2px;
-    height: calc(100% - 48px);
+    height: 100%;
     z-index: 0;
 
     @include viewport--md {
@@ -33,10 +33,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 47px 60px 0;
+  padding: 0 60px;
 
   @include viewport--md {
-    padding: 0 20px 6px;
+    padding: 0 20px 12px;
   }
 }
 
