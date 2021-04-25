@@ -38,29 +38,3 @@
     flex-grow: 1;
   }
 }
-
-.scroll-lock {
-  position: fixed;
-
-  overflow-y: auto;
-}
-
-.btn-reset {
-  padding: 0;
-
-  background: $color-transparent;
-  border: none;
-  cursor: pointer;
-}
-
-@keyframes disableBreakpointAnimation {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}

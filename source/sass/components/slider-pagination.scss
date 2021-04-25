@@ -1,0 +1,32 @@
+.slider-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+
+  @include viewport--md {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  > .swiper-pagination-bullet {
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    background: $color-default-white;
+    opacity: 1;
+    transition: transform $default-transition-settings;
+    margin: 0 5px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    transform: scale(1.5);
+  }
+
+  &--blue {
+    .swiper-pagination-bullet {
+      background: $color-mariner;
+    }
+  }
+}

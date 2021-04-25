@@ -1,0 +1,40 @@
+.list {
+  list-style: none;
+}
+
+.list__item {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $font-family--primary;
+  color: $color-nero;
+  padding-left: 34px;
+
+  &::before {
+    content: "—";
+    position: absolute;
+    left: 9px;
+    top: 0;
+    color: $color-mariner;
+
+    @include viewport--md {
+      left: 20px;
+    }
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  @include viewport--md {
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 38px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 9px;
+    }
+  }
+}

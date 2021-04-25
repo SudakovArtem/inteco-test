@@ -1,6 +1,8 @@
 .footer {
-  min-height: 100px;
-  padding: 0 60px;
+  min-height: 115px;
+  background-color: $color-default-white;
 
-  background-color: $color-blue;
+  @include viewport--md {
+    min-height: 30px;
+  }
 }

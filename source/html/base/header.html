@@ -1,13 +1,15 @@
 <header class="header @@if (context.mod) { header--@@mod }">
-  <div class="header__wrapper container">
-    <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
-      <img src="../../img/svg/logo.svg" width="59" height="29" alt="logo">
-    </a>
+  <div class="header__container container">
+    <div class="header__wrapper">
+      <a class="header__logo" target="_blank" rel="nofollow noopener" href="https://inteco.ru/" aria-label="Переход на главную">
+        <img src="./img/svg/logo.svg" width="59" height="29" alt="logo">
+      </a>
 
-    <a href="#" class="header__link">
-      <svg width="20" height="20">
-        <use xlink:href="#icon-language"></use>
-      </svg>
-    </a>
+      <a href="#" class="header__link">
+        <svg width="20" height="20">
+          <use xlink:href="#icon-language"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </header>

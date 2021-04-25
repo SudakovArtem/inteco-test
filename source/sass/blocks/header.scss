@@ -1,37 +1,87 @@
 .header {
+  background-color: $color-default-white;
+}
+
+.header__container {
+  position: relative;
   display: flex;
   align-items: center;
-  min-height: 100px;
-  padding: 0 40px;
+  min-height: 168px;
 
-  background-color: $color-blue;
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @include viewport--md {
+    min-height: 83px;
   }
 
-  a,
-  p {
-    color: $color-white;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $color-very-light-grey;
+    left: 23.83%;
+    top: 48px;
+    width: 2px;
+    height: calc(100% - 48px);
+    z-index: 0;
+
+    @include viewport--md {
+      display: none;
+    }
   }
+}
 
-  ul {
-    display: flex;
-    margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
-    padding: 0;
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 47px 60px 0;
 
-    list-style: none;
+  @include viewport--md {
+    padding: 0 20px 6px;
+  }
+}
 
-    li {
-      margin-right: 20px;
+.header__logo {
+  width: 150px;
+  height: 74px;
+  transition: opacity $default-transition-settings;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.5;
     }
   }
 
-  .main-nav__toggle {
+  img {
+    width: 150px;
+    height: 74px;
+
+    @include viewport--md {
+      width: 106px;
+      height: 55px;
+    }
+  }
+
+  @include viewport--md {
+    width: 106px;
+    height: 55px;
+  }
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity $default-transition-settings;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+
+  @include viewport--md {
     display: none;
   }
 }
